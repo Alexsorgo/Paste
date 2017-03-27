@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+{% end %}
+
+{% block content %}
+<form action="/new" method="post">
+  <h2>SET DATA</h2>
+  <p>Ваш запрос будет находится "Оплата счетов" -> "For Developers"</p>
+    <div>
+            <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
+            <p><button type="submit" value="Отправить">Paste</button></p>
+    </div>
+</form>
+{% end %}

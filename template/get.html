@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div>
+  <h2>SET DATA</h2>
+  <p>Start your conversation</p>
+</div>
+{% end %}
+
+{% block content %}
+<form action="/" method="post">
+<div>
+        <p><textarea class="wtf" name="str"></textarea></p>
+        <p><button type="submit" value="Отправить">Paste</button></p>
+</div>
+</form>
+{% end %}
+
+{% block footer %}
+
+{% end %}

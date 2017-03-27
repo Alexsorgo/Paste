@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <title>Storm Chasing Tornado</title>
+  <style> textarea {
+    width: 80%;
+    height: 700px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  /** { margin: 3px; padding: 0; }*/
+   /*p { padding: 10px; }*/
+   /*#left { position: absolute; left: 0; top: 75px; width: 50%; }*/
+   /*#header_left {position: absolute; left: 10px; top: 10px; width: 50%; }*/
+   /*#header_right {position: absolute; right: 0; top: 10px; width: 50%; }*/
+   /*#right { position: absolute; right: 0; top: 75px; width: 50%; }*/
+  </style>
+</head>
+<body>
+
+<div id="header">
+  {% block header %}{% end %}
+</div>
+
+<div id="content">
+  {% block content %}{% end %}
+</div>
+
+<div id="footer">
+  {% block footer %}{% end %}
+</div>
+
+</body>
+</html>
