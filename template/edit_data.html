@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block header %}
+
+{% end %}
+
+{% block content %}
+<form action="/post/{{ same }}" method="post">
+  <h2>EDIT YOUR DATA</h2>
+    <div>
+            <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
+            <p><button type="submit" name="edit" value="save">Save</button></p>
+    </div>
+</form>
+{% end %}

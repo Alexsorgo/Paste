@@ -5,12 +5,12 @@
 {% end %}
 
 {% block content %}
-<form action="/new" method="post">
-  <h2>SET DATA</h2>
-  <p>Ваш запрос будет находится "Оплата счетов" -> "For Developers"</p>
+<form action="/post/{{ same }}" method="post">
+  <h2>YOUR DATA</h2>
+  <p>Чтобы поделиться данными, скопируйте ссылку</p>
     <div>
-            <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
-            <p><button type="submit" value="Отправить">Paste</button></p>
+            <p><textarea class="wtf" name="str" readonly>{{ storm }}</textarea></p>
+            <p><button type="submit" name="edit" value="edit">Edit</button></p>
     </div>
 </form>
 {% end %}
