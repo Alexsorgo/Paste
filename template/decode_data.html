@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+{% end %}
+
+{% block content %}
+<form action="/" method="post">
+    <button type="submit" class="btn btn-primary" name="btn" value="decd">Decode</button>
+    <button type="submit" class="btn btn-primary" name="btn" value="enc">Encode</button>
+    <button type="submit" class="btn btn-primary" name="btn" value="edit">Make Pretty</button>
+    <p>Вы можете исправить нужнные вам атрибуты и сразу закодировать данные</p>
+    <div>
+        <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
+    </div>
+</form>
+{% end %}

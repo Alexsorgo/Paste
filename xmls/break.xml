@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Response>
+  <SenderInfo>
+    <SessionInfo id="230530"/>
+  </SenderInfo>
+  <StatusBlock>
+    <Status>OK</Status>
+  </StatusBlock>
+  <Parameters>
+    <AuthType>NONE</AuthType>
+    <SmsRemainingTime/>
+  </Parameters>
+</Response>

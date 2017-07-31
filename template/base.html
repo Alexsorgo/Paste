@@ -1,26 +1,39 @@
 <!DOCTYPE html >
 <html lang="en">
 <head>
-  <title>CS Paste</title>
+  <title>CS decoder</title>
+  <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
   <style> textarea {
     width: 80%;
-    height: 700px;
+    height: 500px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     resize: none;
   }
-  /** { margin: 3px; padding: 0; }*/
-   /*p { padding: 10px; }*/
-   /*#left { position: absolute; left: 0; top: 75px; width: 50%; }*/
-   /*#header_left {position: absolute; left: 10px; top: 10px; width: 50%; }*/
-   /*#header_right {position: absolute; right: 0; top: 10px; width: 50%; }*/
-   /*#right { position: absolute; right: 0; top: 75px; width: 50%; }*/
+  html, body, #Container {
+    height:100%;
+        padding-top: 0.5%;
+    padding-left:0.5%;
+    }
+  button , a, p { margin: 10px;}
   </style>
 </head>
 <body>
 
 <div id="header">
+    <a href="http://192.168.1.116:8080/" role="button" class="btn btn-info">Decoder</a>
+    <a href="http://192.168.1.116:8080/paste" role="button" class="btn btn-info">Paste Service</a>
+    <a href="http://192.168.1.116:8080/md5" role="button" class="btn btn-info">Postman</a>
+    <a href="http://192.168.1.116:8080/sql" role="button" class="btn btn-info">SQL</a>
   {% block header %}{% end %}
 </div>
 
@@ -31,6 +44,6 @@
 <div id="footer">
   {% block footer %}{% end %}
 </div>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,12 +5,11 @@
 {% end %}
 
 {% block content %}
-<form action="/post/{{ same }}" method="post">
-  <h2>YOUR DATA</h2>
-  <p>Чтобы поделиться данными, скопируйте ссылку</p>
+<form action="/" method="post">
+  <button type="submit" class="btn btn-primary" name="btn" value="decd">Decode</button>
+  <button type="submit" class="btn btn-primary" name="btn" value="enc">Encode</button>
     <div>
-            <p><textarea class="wtf" name="str" readonly>{{ storm }}</textarea></p>
-            <p><button type="submit" name="edit" value="edit">Edit</button></p>
+        <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
     </div>
 </form>
 {% end %}

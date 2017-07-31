@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <h1>Some Header</h1>
+{% end %}
+
+{% block content %}
+<h2>SET DATA</h2>
+{% end %}
+
+{% block footer %}
+<form action="/new" method="post">
+  <p><input type="text" name="str"></p>
+  <p><input type="submit" value="Отправить"></p>
+</form>
+{% end %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block header %}
+<div>
+  <h2>SET DATA</h2>
+  <p>Введите данные</p>
+</div>
+{% end %}
+
+{% block content %}
+<form action="/paste" method="post">
+    <p><button type="submit" class="btn btn-primary" value="Отправить">Paste</button></p>
+    <div>
+            <p><textarea class="wtf" name="str"></textarea></p>
+    </div>
+</form>
+{% end %}
+
+{% block footer %}
+
+{% end %}

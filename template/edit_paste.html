@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+{% end %}
+
+{% block content %}
+<form action="/post/{{ same }}" method="post">
+  <h2>EDIT YOUR DATA</h2>
+  <p><button type="submit" class="btn btn-primary" name="edit" value="save">Save</button></p>
+    <div>
+            <p><textarea class="wtf" name="str">{{ storm }}</textarea></p>
+            <p><button type="submit" class="btn btn-primary" name="edit" value="save">Save</button></p>
+    </div>
+</form>
+{% end %}

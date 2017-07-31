@@ -1,0 +1,21 @@
+<iFOBSWebServicePacket>
+   <PacketBody>
+      <CallingService servicename="DocumentsInProcess">
+         <Parameters>
+            <LastTxId>1</LastTxId>
+            <MaxTxCount>5</MaxTxCount>
+         </Parameters>
+      </CallingService>
+   </PacketBody>
+   <PacketHeader>
+      <AuthInfo>
+         <User login="sorgo" password="4ae88d125df0b5201d6c2900f1a4f989"/>
+      </AuthInfo>
+      <SenderInfo>
+         <Application apiVersion="1.0.1" device="0" hard="HUAWEI G730-U10" name="iFOBS-WebMobile" os="android4.2.2+apiVersion17" version="2.0.2.8"/>
+         <SessionInfo dns="" osuser="" id="85214"/>
+         <Locale lang="ru"/>
+      </SenderInfo>
+   </PacketHeader>
+   <PacketSign></PacketSign>
+</iFOBSWebServicePacket>

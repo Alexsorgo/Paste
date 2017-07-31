@@ -3,16 +3,15 @@
 {% block header %}
 <div>
   <h2>SET DATA</h2>
-  <p>Введите данные</p>
 </div>
 {% end %}
 
 {% block content %}
 <form action="/" method="post">
-<div>
+    <p><button type="submit" class="btn btn-primary" name="btn" value="decd">Decode</button><padding-left 150px><button type="submit" class="btn btn-primary" name="btn" value="enc">Encode</button></padding-left>
+    <div>
         <p><textarea class="wtf" name="str"></textarea></p>
-        <p><button type="submit" value="Отправить">Paste</button></p>
-</div>
+    </div>
 </form>
 {% end %}
 
