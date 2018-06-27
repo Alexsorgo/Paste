@@ -1,0 +1,9 @@
+.idea/
+.pytest_cache/
+venv/
+*.pyc
+.env
+.DS_Store
+logs/
+screenshot_on_fail/
+*.ipa
