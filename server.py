@@ -46,6 +46,6 @@ if __name__ == '__main__':
 
     http_server = HTTPServer(application)
     ip = get_lan_ip()
-    http_server.listen(8080, ip)
+    http_server.listen(8081, ip)
     print('server started on ' + str(ip))
     IOLoop.current().start()
